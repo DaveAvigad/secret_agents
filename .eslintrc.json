@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "airbnb/base", "plugin:import/errors"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module",
+        "ecmaVersion": 8
+    },
+    "rules": {
+        "array-bracket-spacing": ["error", "always", {
+            "objectsInArrays": false
+        }],
+        "object-curly-spacing": ["error", "always"],
+        "arrow-body-style": 0,
+        "no-shadow": 0,
+        "no-param-reassign": 0,
+        "no-console": 0,
+        "max-len": 0,
+        "camelcase": 0,
+        "indent": ["off", "tab"],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "never"]
+    }
+}
